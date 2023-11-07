@@ -21,7 +21,8 @@ Gun beats Snake (Gun shoots snake).
 FILES INCLUDED:
 index.html: HTML file containing the game structure.
 styles.css: CSS file for styling the game elements.
-script.js: JavaScript file containing the game logic.
+app.js: JavaScript file containing the game logic.
+start.html , start.css , rules.html , rules.css .
 Development
 This game was developed using basic web technologies: HTML, CSS, and JavaScript.
 
