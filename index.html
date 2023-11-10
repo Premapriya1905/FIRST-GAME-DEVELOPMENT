@@ -9,14 +9,41 @@
 <body>
     <h1 id="details">U S E R D E T A I L S </h1>
     <div id="name1">
-        <h1>U S E R N A M E : <input class=input type="text"></h1>
+        <h1>U S E R N A M E : <input id="username" type="text"></h1>
     </div>
     <div id="name2">
-        <h1>N I C K N A M E : <input class=input type="text"></h1>
+        <h1>N I C K N A M E : <input id="nickname" type="text"></h1>
     </div>
     
+    <button id="saveinfo" onclick="saveInfo()">SAVE INFO</button>
+    <button id="button" onclick="login()">LOGIN</button>
+  
 
-    <button id="button">LOGIN</button>
+    <script>
+    function saveInfo() {
+    var username = document.getElementById("username").value;
+    var nickname = document.getElementById("nickname").value;
+
+    if (username && nickname) {
+        var userInfo = {
+            username: username,
+            nickname: nickname,
+        };
+
+        localStorage.setItem("userInfo", userInfo);
+        console.log(userInfo)
+        alert("Welcome, " + username + "! Your info has been saved successfully!");
+    } else {
+        alert("Please fill in both name and nickname fields.");
+    }
+}
     
+        const login = document.getElementById("button")
+        login.onclick = () => {
+        window.location.href="./start.html"
+        }
+
+        console.log(userInfo)
+    </script>
 </body>
 </html>

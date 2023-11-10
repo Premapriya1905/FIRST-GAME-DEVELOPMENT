@@ -8,15 +8,28 @@
 </head>
 <body>
     <div class="heading">
-        <h1>SNAKE</h1>
-        <h1>WATER</h1>
-        <h1>GUN</h1>
+
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h1 class="animate-charcter">SNAKE</h1>
+                <h1 class="animate-charcter">WATER</h1>
+                <h1 class="animate-charcter">GUN</h1>
+              </div>
+            </div>
+          </div>
+       
     </div>
         <button id="start_button">START GAME</button>
         <button class="back_button">👈BACK</button>
-    
-
-    
 </body>
 </html>
-<script src="app.js"></script>
+<script>
+    document.getElementById("start_button").addEventListener(("click"),()=>{
+        window.location.href="./rules.html"
+    })
+    
+    document.querySelector(".back_button").addEventListener(("click"), ()=>{
+        window.location.href="./index.html"
+    })
+</script>

@@ -6,22 +6,31 @@
     <link rel="stylesheet" href="rules.css">
     <title>Rules</title>
 </head>
-<body>
+<body>+
     <div class="guidelines">
         <h1>INSTRUCTIONS :</h1>
         <h2>1.You will be presented with three buttons: "Snake," "Water," and "Gun."</h2>
         <h2>2.Click on the button corresponding to your choice for that round.</h2>
         <h2>3.The computer will randomly select its choice (Snake, Water, or Gun).</h2>
-        <h2>4.The result of the round will be displayed:
-            ->If you win, you gain a point.
-            ->If you lose, the computer gains a point.
-            ->If it's a draw, neither player gains a point.</h2>
-        <h2>5.The game will continue for a set number of rounds (you can decide how many rounds to play).</h2>
+        <h2>4.The result of the round will be displayed:</h2>
+        <h2>->If you win, you gain a point.</h2>
+        <h2>->If you lose, the computer gains a point.</h2>
+        <h2>->If it's a draw, neither player gains a point.</h2>
+        <h2>5.The game will continue for a set number of rounds</h2>
+        <h2>(you can decide how many rounds to play).</h2>
         <h2>6.After all rounds are completed, the final score will be displayed.</h2>
     </div>
     <div>
         <button class="back_button">👈BACK</button>
-        <button id="ready">READY-STEADY-PO -></button>
+        <button id="ready">READY-STEADY-PO 👉</button>
     </div>
 </body>
 </html>
+<script>
+    document.getElementById("ready").addEventListener(("click"),()=>{
+        window.location.href="./game.html"
+    })
+    document.querySelector(".back_button").addEventListener(("click"),()=>{
+        window.location.href="./start.html"
+    })
+</script>

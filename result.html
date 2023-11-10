@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="result.css">
+    <title>Result</title>
+</head>
+
+<body>
+    <div>
+        <button class="return">
+            <div id="returnemoji">↩️</div>
+        </button>
+    </div>
+    <div class="message"></div>
+    <button class="playagain">
+        <h2>▶️<b>Play Again</b></h2>
+    </button>
+    
+</body>
+
+</html>
+
+<script>
+    document.querySelector(".playagain").addEventListener(("click"), () => {
+        window.location.href = "./start.html"
+    })
+
+    document.querySelector(".return").addEventListener(("click"), () => {
+        window.location.href = "./game.html"
+    })
+
+</script>
+<script>
+    
+    var message=document.querySelector(".message");
+    const s1 = localStorage.getItem("score1")
+    const s2 = localStorage.getItem("score2")
+    console.log(s1,s2)
+    if(s1<s2){
+        message.innerHTML = "You won the game😁";
+    }else if(s1>s2){
+        message.innerHTML="Computer won the game🥲 Better luck next time👍";
+    }
+
+
+</script>
